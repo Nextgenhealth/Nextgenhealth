@@ -8,22 +8,37 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f8f3;
+      background-color: #f4f6f1;
       color: #2f3e2e;
     }
     header {
-      background-color: #1b3a2a; /* Dark Forest Green */
-      color: white;
-      padding: 40px 20px;
+      background-color: #3b4a1a; /* dark olive green */
+      color: #d9e4c8; /* softer pale green text */
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0 0 10px;
-      font-size: 1.8em;
+      font-size: 2em;
     }
     header p {
-      font-size: 1.1em;
+      font-size: 1.2em;
       margin: 0;
+    }
+    nav {
+      background-color: #2e3a15; /* slightly darker olive */
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 40px 20px;
@@ -31,14 +46,10 @@
       margin: 0 auto;
     }
     h2 {
-      color: #1b3a2a;
-    }
-    .focus-area {
-      margin-top: 20px;
-      line-height: 1.6;
+      color: #6B8E23; /* olive green */
     }
     footer {
-      background-color: #1b3a2a;
+      background-color: #3b4a1a;
       color: white;
       text-align: center;
       padding: 20px;
@@ -47,7 +58,7 @@
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: #6b8e23; /* Olive Green */
+      background-color: #6B8E23;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -59,13 +70,14 @@
     .founder-box {
       background-color: #e9f3e0;
       padding: 20px;
-      border-left: 5px solid #6b8e23;
+      border-left: 5px solid #6B8E23;
       margin-top: 20px;
       border-radius: 8px;
+      display: block; /* removed flex since no image */
     }
     .founder-box h3 {
       margin-top: 0;
-      color: #1b3a2a;
+      color: #3b4a1a;
     }
     .founder-box p {
       margin: 10px 0;
@@ -76,7 +88,7 @@
     .founder-social a {
       margin-right: 10px;
       text-decoration: none;
-      color: #6b8e23;
+      color: #6B8E23;
       font-weight: bold;
     }
   </style>
@@ -84,20 +96,30 @@
 <body>
 
   <header>
-    <h1>A platform dedicated to protecting the health of future generations by tackling today’s public health challenges — one step, one story, one solution at a time.</h1>
+    <h1>Protecting Tomorrow's Health, Starting Today</h1>
     <p>🌿 Rooted in research. Driven by purpose. Focused on the future.</p>
     <a href="#about" class="cta-button">Explore Our Mission</a>
   </header>
 
+  <nav>
+    <a href="/Nextgenhealth/health-nutrition">Health & Nutrition</a>
+    <a href="#">Fitness & Wellness</a>
+    <a href="#">Disease Prevention</a>
+    <a href="#">Health Tech & Innovation</a>
+    <a href="#">Public Health & Equity</a>
+  </nav>
+
   <section id="about">
     <h2>About NextGenHealth</h2>
     <p><strong>NextGenHealth</strong> is a purpose-driven platform born from a simple yet powerful belief: <em>The health of future generations begins with the choices we make today.</em></p>
-    <p> Through awareness, research insights, and action-oriented resources, we aim to inspire sustainable and equitable health solutions worldwide.</p>
+    <p>At the intersection of research, advocacy, and community empowerment, we bring awareness and action to today’s most pressing public health threats — from climate change and pollution to sedentary living, health inequity, and chronic disease.</p>
 
     <div class="founder-box">
       <h3>Meet the Founder</h3>
       <p><strong>Sebika Dulal, MPH-Epidemiology Candidate</strong><br>University of Oklahoma Health Sciences Center</p>
-      <p>With a heart for community health and a mind for research, Sebika brings her Nepali roots and epidemiological expertise to NextGenHealth. She is committed to bridging the gap between science and society by translating evidence-based research, promoting emerging health innovations, and fostering public awareness to prevent disease and protect the next generation.</p>
+      <p>Sebika is a Nepal-born public health researcher passionate about the intersection of global health, epidemiology, and sustainable development. Her interests span chronic and infectious diseases, nutrition-related comorbidities, and inequities in health service delivery—especially in disadvantaged communities.</p>
+      <p>With lived experience as an international student and academic training in epidemiology, she brings a data-driven, compassionate voice to empower global communities. She is committed to bridging the gap between science and society by translating evidence-based research, promoting emerging health innovations, and fostering public awareness to prevent disease and protect the next generation.</p>
+      <p><em>“NextGenHealth is more than a platform — it’s a public health promise to our future.”</em></p>
       <div class="founder-social">
         <a href="https://www.linkedin.com/in/sebikadulal04/" target="_blank">LinkedIn</a>
         <a href="mailto:sebicadulal777@gmail.com">Email</a>
@@ -106,29 +128,14 @@
   </section>
 
   <section>
-    <h2>Our Focus Areas</h2>
-    <div class="focus-area">
-      <strong><a href="/Nextgenhealth/health-nutrition">Health & Nutrition:</a></strong> Making science-based nutrition simple, accessible, and culturally relevant.<br>
-      <strong>Fitness & Wellness:</strong> Empowering every body to move—physically, mentally, and socially.<br>
-      <strong>Disease Prevention:</strong> Shifting the global conversation from treatment to prevention.<br>
-      <strong>Health Tech & Innovation:</strong> Exploring how digital tools and research breakthroughs are changing lives.<br>
-      <strong>Global Public Health & Equity:</strong> Centering marginalized voices and addressing the root causes of health disparities.
-    </div>
-  </section>
-
-  <section>
     <h2>Why It Matters</h2>
     <p>We are witnessing a rise in chronic diseases, mental health struggles, environmental health threats, and widening health inequities. The next generation shouldn’t inherit these problems—they should be part of the solution.</p>
-    <p>NextGen Health envisions a world where evidence, education, and innovation come together to protect the health of all people, regardless of background or geography.</p>
+    <p>NextGen Health envisions a world where evidence, empathy, and innovation come together to protect the health of all people, regardless of background or geography.</p>
   </section>
 
   <section>
-    <h2>Blog Highlights (Coming Soon)</h2>
-    <ul>
-      <li>“Is Your Plate Ready for the Future?”</li>
-      <li>“5 Technologies That Could Change Public Health Forever”</li>
-      <li>“What Nepal Can Teach the World About Community Wellness”</li>
-    </ul>
+    <h2>Resources &amp; Tools</h2>
+    <p>Explore curated guides, infographics, and evidence-based tips on nutrition, disease prevention, and sustainable living—designed to empower you and your community.</p>
   </section>
 
   <section>
