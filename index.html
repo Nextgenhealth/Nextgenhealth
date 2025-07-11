@@ -10,6 +10,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f6f1;
       color: #2f3e2e;
+      line-height: 1.6;
     }
     header {
       background-color: #3b4a1a; /* dark olive green */
@@ -19,25 +20,30 @@
     }
     header h1 {
       margin: 0 0 10px;
-      font-size: 2em;
+      font-size: 2.2em;
+      font-weight: 700;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin: 0;
+      font-style: italic;
     }
     nav {
       background-color: #2e3a15; /* slightly darker olive */
-      padding: 10px 20px;
+      padding: 12px 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     nav a {
-      color: white;
+      color: #d9e4c8;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      display: inline-block;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 1em;
+      transition: color 0.3s ease;
     }
     nav a:hover {
+      color: #a9c55a;
       text-decoration: underline;
     }
     section {
@@ -46,50 +52,75 @@
       margin: 0 auto;
     }
     h2 {
-      color: #6B8E23; /* olive green */
+      color: #6b8e23; /* olive green */
+      font-weight: 700;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #a9c55a;
+      padding-bottom: 5px;
     }
     footer {
       background-color: #3b4a1a;
-      color: white;
+      color: #d9e4c8;
       text-align: center;
       padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
     }
     .cta-button {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #6B8E23;
+      padding: 12px 28px;
+      background-color: #6b8e23;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1em;
+      box-shadow: 0 4px 8px rgba(107, 142, 35, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
     .cta-button:hover {
       background-color: #5a7a1e;
+      box-shadow: 0 6px 12px rgba(90, 122, 30, 0.6);
     }
     .founder-box {
       background-color: #e9f3e0;
-      padding: 20px;
-      border-left: 5px solid #6B8E23;
-      margin-top: 20px;
+      padding: 25px 30px;
+      border-left: 6px solid #6b8e23;
+      margin-top: 30px;
       border-radius: 8px;
-      display: block; /* removed flex since no image */
+      box-shadow: 2px 2px 8px rgba(107, 142, 35, 0.15);
     }
     .founder-box h3 {
       margin-top: 0;
       color: #3b4a1a;
+      font-weight: 700;
+      font-size: 1.6em;
     }
     .founder-box p {
-      margin: 10px 0;
+      margin: 15px 0;
+      font-size: 1.05em;
+      color: #2f3e2e;
+    }
+    .founder-box p em {
+      color: #5a7a1e;
+      font-style: normal;
+      font-weight: 600;
     }
     .founder-social {
-      margin-top: 15px;
+      margin-top: 20px;
     }
     .founder-social a {
-      margin-right: 10px;
+      margin-right: 20px;
       text-decoration: none;
-      color: #6B8E23;
-      font-weight: bold;
+      color: #6b8e23;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    .founder-social a:hover {
+      color: #5a7a1e;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -116,10 +147,10 @@
 
     <div class="founder-box">
       <h3>Meet the Founder</h3>
-      <p><strong> Sebika is a dedicated public health professional from Nepal, specializing in epidemiology with a strong commitment to disease prevention. She focuses on addressing the burden of chronic disease, infectious disease threats, and nutrition-related comorbidities affecting vulnerable populations. NextGenHealth reflects her mission to raise health awareness by translating complex research into practical education and community-centered solutions that empower communities to prevent disease and build healthier futures .</p>
+      <p><strong>Sebika is a dedicated public health professional from Nepal, specializing in epidemiology with a strong commitment to disease prevention. She holds an MPH from the University of Oklahoma Health Sciences Center.</strong> She focuses on addressing the burden of chronic disease, infectious disease threats, and nutrition-related comorbidities affecting vulnerable populations. NextGenHealth reflects her mission to raise health awareness by translating complex research into practical education and community-centered solutions that empower communities to prevent disease and build healthier futures.</p>
       <p><em>“NextGenHealth is more than a platform — it’s a public health promise to our future.”</em></p>
       <div class="founder-social">
-        <a href="https://www.linkedin.com/in/sebikadulal04/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/sebikadulal04/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:sebicadulal777@gmail.com">Email</a>
       </div>
     </div>
@@ -128,7 +159,7 @@
   <section>
     <h2>Why It Matters</h2>
     <p>We are witnessing a rise in chronic diseases, mental health struggles, environmental health threats, and widening health inequities. The next generation shouldn’t inherit these problems—they should be part of the solution.</p>
-    <p>NextGen Health envisions a world where evidence, empathy, and innovation come together to protect the health of all people, regardless of background or geography.</p>
+    <p>NextGenHealth envisions a world where evidence, empathy, and innovation come together to protect the health of all people, regardless of background or geography.</p>
   </section>
 
   <section>
@@ -143,7 +174,7 @@
   </section>
 
   <footer>
-    <p>NextGen Health — Public Health for the Future</p>
+    <p>NextGenHealth — Public Health for the Future</p>
     <p>🌐 Connect • Learn • Act</p>
   </footer>
 
